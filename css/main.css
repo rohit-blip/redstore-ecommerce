@@ -300,6 +300,7 @@ ul{
 .menu-icon{
     width: 20px;
     margin-left: 20px;
+    display: none;
 }
 
 /* MediaQuery for Menu */
@@ -310,7 +311,9 @@ ul{
         top: 70px;
         left: 0;
         background: #333;
-        width: 100px;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
     }
 
     nav ul li{
@@ -319,4 +322,15 @@ ul{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+
 }
