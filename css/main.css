@@ -55,6 +55,41 @@ p{
     justify-content: space-around;
 }
 
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid #ff523b;
+    background-color: white;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+}
+
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
@@ -332,5 +367,19 @@ ul{
         cursor: pointer;
     }
 
+}
+
+/* MediaQuery for less than 600px */
+
+@media only screen and (max-width: 600px){
+ 
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    
 
 }
